@@ -105,12 +105,10 @@ a:link, a:visited {
 }
 
 /*
-@media screen and (min-width: 800px) {
-  .abouttext {
-    font-size: 22px;
-  }
-}
-*/
+ *
+ * PROJECTS
+ *
+ */
 
 .projthumbnail-container {
   text-align: center;
@@ -186,6 +184,62 @@ a:link, a:visited {
   filter: blur(1px);
 }
 
+/*
+ *
+ * TRAVELS
+ *
+ */
+
+.albumthumbnail-container {
+  text-align: center;
+  max-width: 60%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+}
+
+.albumthumbnail {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 168px;
+  width: 300px;
+  overflow: hidden;
+  color: #dedede;
+}
+
+.albumthumbnail img {
+  transform: translate3d(0px, 0px, 0px);
+  transition: transform 0.2s ease-in-out;
+}
+
+.albumthumbnail img:hover {
+  transform: translate3d(0px, -169px, 0px);
+}
+
+.albumthumbnail:hover {
+  color: #eb2f3f;
+}
+
+.albumtitle {
+  display: block;
+  font-family: 'cascadia';
+  font-size: 14px;
+  color: inherit;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  visibility: hidden;
+}
+
+/*
+ *
+ * CONTACT
+ *
+ */
+
 .contacttext {
   color: #dedede;
   text-align: center;
@@ -198,6 +252,11 @@ a:link, a:visited {
 .contactline {
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+.link:hover {
+  color: #0398fc;
+  transition-duration: 0.2s;
 }
 
 .pagename {
