@@ -57,7 +57,7 @@ a:link, a:visited {
   margin-left: 10px;
   margin-right: 10px;
   font-family: 'cascadia';
-  font-size: 16px;
+  font-size: 20px;
   color: #dedede;
   transition-duration: 0.0s;
   display: inline-block;
@@ -69,7 +69,6 @@ a:link, a:visited {
   margin-left: 10px;
   margin-right: 10px;
   font-family: 'cascadia';
-  font-size: 16px;
   color: white;
 }
 
@@ -80,9 +79,18 @@ a:link, a:visited {
   margin-left: 10px;
   margin-right: 10px;
   font-family: 'cascadia';
-  font-size: 16px;
+  font-size: 20px;
   color: #eb2f3f;
   transition-duration: 0.0s;
+}
+
+@media only screen and (max-width: 700px) {
+  .sitelinkbutton {
+    font-size: 40px;
+  }
+  .sitelinkbutton-current {
+    font-size: 40px;
+  }
 }
 
 .abouttext-container {
@@ -186,7 +194,7 @@ a:link, a:visited {
 
 /*
  *
- * TRAVELS
+ * TRAVELS - Not currently used
  *
  */
 
