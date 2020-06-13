@@ -52,7 +52,7 @@ a:link, a:visited {
 
 .sitelinkbutton {
   background-color: Transparent;
-  outline: none;-
+  outline: none;
   border:none;
   margin-left: 10px;
   margin-right: 10px;
@@ -84,15 +84,6 @@ a:link, a:visited {
   transition-duration: 0.0s;
 }
 
-@media only screen and (max-width: 700px) {
-  .sitelinkbutton {
-    font-size: 40px;
-  }
-  .sitelinkbutton-current {
-    font-size: 40px;
-  }
-}
-
 .abouttext-container {
   text-align: center;
   width: 50%;
@@ -110,6 +101,27 @@ a:link, a:visited {
   font-size: 24px;
   /*font-size: 2vw;*/
   display: inline-block;
+}
+
+@media only screen and (max-width: 650px) {
+  .sitelinkbutton {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .sitelinkbutton-current {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .sitelinks {
+    width: 100%
+  }
+  .titlediv {
+    padding-top: 10px;
+    width: 100%;
+  }
+  .abouttext-container {
+    width: 100%;
+  }
 }
 
 /*
