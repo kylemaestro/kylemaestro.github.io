@@ -120,7 +120,12 @@ a:link, a:visited {
     width: 100%;
   }
   .abouttext-container {
-    width: 100%;
+    width: 90%;
+    margin-left: 10%;
+    margin-right: 5%;
+  }
+  .abouttext {
+    padding-left: 0px;
   }
 }
 
