@@ -103,6 +103,7 @@ a:link, a:visited {
   display: inline-block;
 }
 
+/* For mobile devices */
 @media only screen and (max-width: 650px) {
   .sitelinkbutton {
     font-size: 30px;
@@ -209,6 +210,14 @@ a:link, a:visited {
   filter: blur(1px);
 }
 
+/* For mobile devices */
+@media only screen and (max-width: 650px) {
+  .projthumbnail-container {
+    padding-top: 20px;
+    width: 100%;
+  }
+}
+
 /*
  *
  * TRAVELS - Not currently used
@@ -303,4 +312,11 @@ a:link, a:visited {
   width: 75%;
   margin: auto;
   padding-top: 20%;
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 650px) {
+  .contacttext {
+    font-size: 22px;
+  }
 }
