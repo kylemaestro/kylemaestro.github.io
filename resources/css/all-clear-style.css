@@ -1,0 +1,346 @@
+@font-face {
+    font-family: 'cascadia';
+    src: url('../fonts/cascadia-code/CascadiaCode-Regular.woff2') format('woff2');
+    src: url('../fonts/cascadia-code/CascadiaCode-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  background-color: #001804;
+}
+
+html {
+  background-color: #001804;
+}
+
+a:link, a:visited {
+  color: #46db3b;
+  text-decoration: underline;
+}
+
+.qrcode {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.titlediv {
+  color: rgb(3, 252, 15);
+  text-align: left;
+  padding-left: 10px;
+  font-family: 'cascadia';
+  font-size: 16px;
+  padding-bottom: 0px;
+  padding-top: 10px;
+}
+
+.hiddendiv {
+  color: #001804;
+  text-align: left;
+  padding-left: 10px;
+  font-family: 'cascadia';
+  font-size: 16px;
+  padding-bottom: 0px;
+  padding-top: 10px;
+}
+
+.portrait {
+  text-align: center;
+}
+
+.titlediv-lowpad {
+  color: #0398fc;
+  text-align: center;
+  padding-left: 0px;
+  font-family: 'cascadia';
+  font-size: 40px;
+  padding-bottom: 0px;
+  padding-top: 20px;
+}
+
+.sitelinks {
+  padding-left: 0px;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sitelinkbutton {
+  background-color: Transparent;
+  outline: none;
+  border:none;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'cascadia';
+  font-size: 20px;
+  color: #dedede;
+  transition-duration: 0.0s;
+  display: inline-block;
+}
+
+.sitelinkbutton:hover {
+  background-color: Transparent;
+  outline: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'cascadia';
+  color: white;
+  cursor: pointer;
+}
+
+.sitelinkbutton-current {
+  background-color: Transparent;
+  outline: none;
+  border:none;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: 'cascadia';
+  font-size: 20px;
+  color: #eb2f3f;
+  transition-duration: 0.0s;
+}
+
+.sitelinkbutton-current:hover {
+  cursor: pointer;
+}
+
+.abouttext-container {
+  text-align: center;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+}
+
+.abouttext {
+  color: #0398fc;
+  text-align: left;
+  padding-left: 25px;
+  padding-top: 10px;
+  font-family: 'cascadia';
+  font-size: 24px;
+  /*font-size: 2vw;*/
+  display: inline-block;
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 650px) {
+  .sitelinkbutton {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .sitelinkbutton-current {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .sitelinks {
+    width: 100%
+  }
+  .titlediv {
+    padding-top: 10px;
+    width: 100%;
+  }
+  .abouttext-container {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 0px;
+  }
+  .abouttext {
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+}
+
+/*
+ *
+ * PROJECTS
+ *
+ */
+
+.projthumbnail-container {
+  text-align: center;
+  max-width: 40%;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+}
+
+.projthumbnail {
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+  color: #dedede;
+}
+
+.projthumbnail:hover {
+  transform: scale(1.2);
+  transition-duration: 0.1s;
+  color: #eb2f3f;
+}
+
+.projtitle {
+  display: block;
+  font-family: 'cascadia';
+  font-size: 14px;
+  color: inherit;
+}
+
+.img-description-container {
+  position: absolute;
+  height: 125px;
+  width: 125px;
+  bottom: 52px;
+  left: 32px;
+}
+
+.img-description {
+  position: absolute;
+  bottom: -12px;
+  width: 125px;
+  height: 125px;
+  visibility: hidden;
+}
+
+.img-overlay {
+  position: absolute;
+  width: 154px;
+  height: 154px;
+  left: 18px;
+  top: 18px;
+  background: rgba(11, 13, 18, 0.7);
+  visibility: hidden;
+}
+
+.projthumbnail:hover .img-description {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s, visibility 0.2s;
+  font-family: 'cascadia';
+  font-size: 12px;
+  color: white;
+}
+
+.projthumbnail:hover .img-overlay {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.projthumbnail:hover .projimg {
+  filter: blur(1px);
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 650px) {
+  .projthumbnail-container {
+    padding-top: 20px;
+    width: 100%;
+  }
+}
+
+/*
+ *
+ * TRAVELS - Not currently used
+ *
+ */
+
+.albumthumbnail-container {
+  text-align: center;
+  max-width: 60%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+}
+
+.albumthumbnail {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 168px;
+  width: 300px;
+  overflow: hidden;
+  color: #dedede;
+}
+
+.albumthumbnail img {
+  transform: translate3d(0px, 0px, 0px);
+  transition: transform 0.2s ease-in-out;
+}
+
+.albumthumbnail img:hover {
+  transform: translate3d(0px, -169px, 0px);
+}
+
+.albumthumbnail:hover {
+  color: #eb2f3f;
+}
+
+.albumtitle {
+  display: block;
+  font-family: 'cascadia';
+  font-size: 14px;
+  color: inherit;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  visibility: hidden;
+}
+
+/*
+ *
+ * CONTACT
+ *
+ */
+
+.contacttext {
+  color: #dedede;
+  text-align: center;
+  padding-left: 0px;
+  padding-top: 20px;
+  font-family: 'cascadia';
+  font-size: 26px;
+}
+
+.contactline {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.link:hover {
+  color: #0398fc;
+  transition-duration: 0.2s;
+}
+
+.pagename {
+  color: #46db3b;
+  font-family: 'cascadia';
+  font-size: 16px;
+  padding-left: 0px;
+}
+
+.testimg {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.construction-warning {
+  font-family: 'cascadia';
+  color: #dedede;
+  font-size: 16px;
+  width: 75%;
+  margin: auto;
+  padding-top: 20%;
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 650px) {
+  .contacttext {
+    font-size: 22px;
+  }
+}
