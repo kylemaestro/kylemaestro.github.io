@@ -15,7 +15,7 @@ html {
 }
 
 a:link, a:visited {
-  color: #46db3b;
+  color: #0398fc;
   text-decoration: underline;
 }
 
@@ -89,18 +89,20 @@ a:link, a:visited {
 }
 
 .abouttext-container {
+  margin-top: 25px;
   text-align: center;
-  width: 40%;
+  min-width: 250px;
+  max-width: 400px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 10px;
+  border-radius: 5px;
+  background: #0c1015;
 }
 
 .abouttext {
   color: #0398fc;
   text-align: left;
   padding-left: 25px;
-  padding-top: 10px;
   font-family: 'cascadia';
   font-size: 24px;
   /*font-size: 2vw;*/
@@ -173,17 +175,15 @@ a:link, a:visited {
 
 .img-description-container {
   position: absolute;
-  height: 125px;
-  width: 125px;
+  height: 135px;
+  width: 135px;
   bottom: 52px;
-  left: 32px;
+  left: 30px;
 }
 
 .img-description {
-  position: absolute;
-  bottom: -12px;
-  width: 125px;
-  height: 125px;
+  position: relative;
+  bottom: 10px;
   visibility: hidden;
 }
 
@@ -195,6 +195,11 @@ a:link, a:visited {
   top: 18px;
   background: rgba(11, 13, 18, 0.7);
   visibility: hidden;
+  border-radius: 5px;
+}
+
+.projimg {
+  border-radius: 5px;
 }
 
 .projthumbnail:hover .img-description {
@@ -226,56 +231,6 @@ a:link, a:visited {
 
 /*
  *
- * TRAVELS - Not currently used
- *
- */
-
-.albumthumbnail-container {
-  text-align: center;
-  max-width: 60%;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 40px;
-}
-
-.albumthumbnail {
-  position: relative;
-  display: inline-block;
-  padding-left: 20px;
-  padding-right: 20px;
-  height: 168px;
-  width: 300px;
-  overflow: hidden;
-  color: #dedede;
-}
-
-.albumthumbnail img {
-  transform: translate3d(0px, 0px, 0px);
-  transition: transform 0.2s ease-in-out;
-}
-
-.albumthumbnail img:hover {
-  transform: translate3d(0px, -169px, 0px);
-}
-
-.albumthumbnail:hover {
-  color: #eb2f3f;
-}
-
-.albumtitle {
-  display: block;
-  font-family: 'cascadia';
-  font-size: 14px;
-  color: inherit;
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  visibility: hidden;
-}
-
-/*
- *
  * CONTACT
  *
  */
@@ -292,10 +247,21 @@ a:link, a:visited {
 .contactline {
   padding-top: 8px;
   padding-bottom: 8px;
+  min-width: 400px;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 20px !important;
+  border-radius: 5px;
+  background: #0b0d18;
+}
+
+.contactline:hover {
+  background: #0d1d36;
+  transition: background-color 0.2s ease;
 }
 
 .link:hover {
-  color: #0398fc;
+  color: #29a7fb;
   transition-duration: 0.2s;
 }
 
